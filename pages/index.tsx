@@ -244,7 +244,10 @@ const Home: NextPage = () => {
                   {Array(userTickets)
                     .fill("")
                     .map((_, index) => (
-                      <p className="text-emerald-300 h-20 w-12 bg-emerald-500/30 rounded-lg flex-shrink-0 flex items-center justify-center italic text-sm">
+                      <p
+                        key={index}
+                        className="text-emerald-300 h-20 w-12 bg-emerald-500/30 rounded-lg flex-shrink-0 flex items-center justify-center italic text-sm"
+                      >
                         {index + 1}
                       </p>
                     ))}
